@@ -36,7 +36,7 @@ describe "BankAccount" do
 
   describe '#display_balance' do
     it "can display its balance" do
-      expect(avi.display_balance).to eq("Your balance is $2000.")
+      expect(avi.display_balance).to eq("Your balance is $1000.")
     end
   end
 
