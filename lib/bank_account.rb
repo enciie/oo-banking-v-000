@@ -9,7 +9,7 @@ class BankAccount
   end
 
   def deposit(amount)
-    balance = balance + amount
+    balance = balance.to_i + amount
   end
 
 end
