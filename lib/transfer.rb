@@ -13,6 +13,12 @@ class Transfer
     sender.valid? && receiver.valid?
   end
 
-  
+  def execute_transaction
+    if valid? 
+    transfer can only happen once
+    if sender.valid? is false then rejects transfer
+      "Transaction rejected. Please check your account balance."
+
+  end
 
 end
