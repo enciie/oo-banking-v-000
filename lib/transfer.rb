@@ -14,11 +14,13 @@ class Transfer
   end
 
   def execute_transaction
-    if valid? 
-    transfer can only happen once
-    if sender.valid? is false then rejects transfer
+    if valid? && sender.amount >= amount && self.status = "pending"
+      sender.amount = sender.amount - amount
+      receiver.amount = receiver.amount + amount
+      self.status = "complete"
+    else
       "Transaction rejected. Please check your account balance."
-
+    end
   end
 
 end
